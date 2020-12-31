@@ -39,7 +39,7 @@ module.exports = {
       banner: `
         /* 
             Theme Name: Homestead
-            Theme URI: https://github.com/homestead-theme/
+            Theme URI: https://github.com/djbatt/homestead
             Description: Homestead is a child theme of Hello Elementor developed by David Battiston
             Author: David Battiston
             Author URI: https://davidbattiston.com/
