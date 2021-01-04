@@ -3,7 +3,6 @@ const webpack = require("webpack");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const FileManagerPlugin = require("filemanager-webpack-plugin");
 const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
-const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const globImporter = require("node-sass-glob-importer");
 const Autoprefixer = require("autoprefixer");
 
