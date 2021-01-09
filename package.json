@@ -4,7 +4,7 @@
   "description": "Homestead is a child theme developed for Hello Elementor by David Battiston",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "opimg": "node imgoptimizer.js",
+    "optimize": "node imgoptimizer.js",
     "wpd": "webpack --mode development",
     "wpp": "webpack --mode production",
     "wwd": "webpack --watch --mode development",
@@ -15,11 +15,8 @@
   "dependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
-    "@popperjs/core": "^2.6.0",
     "autoprefixer": "^10.1.0",
     "babel-loader": "^8.2.2",
-    "bootstrap": "^5.0.0-beta1",
-    "bootstrap-icons": "^1.2.2",
     "browser-sync": "^2.26.13",
     "browser-sync-webpack-plugin": "^2.3.0",
     "css-loader": "^5.0.1",

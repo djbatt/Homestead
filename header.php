@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<meta name="viewport" content="<?php echo esc_attr( $viewport_content ); ?>">
 	<link rel="icon" 
       type="image/ico" 
-      href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" width="" height="" alt="" />
+      href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico"/>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<?php wp_head(); ?>
 </head>
