@@ -77,9 +77,8 @@ module.exports = {
           copy: [
             { source: "./dist/sass.css", destination: "./style.css" },
             { source: "./dist/js.js", destination: "./scripts.js" },
-            { source: "./node_modules/bootstrap", destination: "./assets/bootstrap"},
-            { source: "./node_modules/bootstrap-icons", destination: "./assets/icons"},
-            { source: "./node_modules/@popperjs/core", destination: "./assets/popper"}
+            // Move packages frome node_modules to package folder, because node_modules doesn't get deployed to front end
+            // { source: "./node_modules/packageName", destination: "./assets/packages/packageFolder"},
           ],
         },
       },
