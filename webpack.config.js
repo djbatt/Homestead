@@ -61,11 +61,11 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        loader: 'string-replace-loader',
+        loader: "string-replace-loader",
         options: {
-          search: '@popperjs/core',
-          replace: '../../../popper',
-        }
+          search: "@popperjs/core",
+          replace: "../../../popper",
+        },
       },
     ],
   },
@@ -86,19 +86,19 @@ module.exports = {
     new BrowserSyncPlugin({
       host: "localhost",
       port: 3000,
-      proxy: "http://aid-surgical.local/",
+      proxy: "http://homestead.local/",
     }),
     new webpack.BannerPlugin({
       banner: `
         /* 
-            Theme Name: AID Surgical
-            Theme URI: https://creativemktgroup.com
-            Description: AID Surgical is a child theme of Hello Elementor developed by David Battiston
+            Theme Name: Homestead
+            Theme URI: https://github.com/djbatt/homestead
+            Description: Homestead is a child theme of Hello Elementor developed by David Battiston
             Author: David Battiston
             Author URI: https://davidbattiston.com/
             Template: hello-elementor
             Version: 1.0.1
-            Text Domain: AID Surgical
+            Text Domain: Homestead
             License: GNU General Public License v3 or later.
             License URI: https://www.gnu.org/licenses/gpl-3.0.html
             Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
@@ -110,6 +110,6 @@ module.exports = {
     minimize: true,
   },
   cache: {
-    type: 'filesystem',
-  }
+    type: "filesystem",
+  },
 };
