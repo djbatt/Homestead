@@ -11,16 +11,19 @@
  * @return void
  */
 function hello_elementor_child_enqueue_scripts() {
+    wp_dequeue_style( 'hello-elementor-theme-style' );
+	wp_deregister_style( 'hello-elementor-theme-style' );
+	
+    wp_dequeue_style( 'hello-elementor' );
+    wp_deregister_style( 'hello-elementor' );
+	
 	wp_enqueue_style(
 		'hello-elementor-child-style',
 		get_stylesheet_directory_uri() . '/style.css',
-		[
-			'hello-elementor-theme-style',
-		],
 		'1.0.0'
 	);
     wp_enqueue_script( 
-        'uusi-child-scripts', 
+        'hello-elementor-child-scripts', 
         get_stylesheet_directory_uri() . '/scripts.js',
         '1.0.0' 
     );
@@ -35,7 +38,7 @@ function add_specific_menu_location_atts( $atts, $item, $args ) {
     // check if the item is in the primary menu
     if( $args->theme_location == 'primary' ) {
       // add the desired attributes:
-      $atts['class'] = 'nav-link';
+      //$atts['class'] = 'nav-link';
     }
     return $atts;
 }
