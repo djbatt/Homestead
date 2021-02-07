@@ -1,20 +1,20 @@
 const fs = require("fs");
 const sharp = require("sharp");
-const { LoaderTargetPlugin } = require("webpack");
 
 //Get all images in src
 
 (async () => {
   const resize = (size) => {
     var fileName = size.file.replace(/\.[^.]*$/, "");
+    var extension = size.file.match(/\.[0-9a-z]+$/i);
     sharp(`${__dirname}/assets/images/src/${size.file}`)
-      .resize({
+      .resize({ 
         width: size.width,
         height: null,
         withoutEnlargement: true,
       })
       .toFile(
-        `${__dirname}/assets/images/public/${fileName}-${size.size}.webp`,
+        `${__dirname}/assets/images/public/${fileName}-${size.size}${extension}`,
         (err, info) => {
           if (err) {
             console.log(files[i], err);
